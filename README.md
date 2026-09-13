@@ -1,137 +1,106 @@
-# 👓 DRUSHTI - Obstacle Detection Glasses for the Blind
+# DRUSHTI 👓
+
+## Obstacle Detection Glasses for the Blind
+
+DRUSHTI is a low-cost wearable assistive device designed to help visually impaired people detect obstacles and improve their mobility.
+
+The system combines an ESP32-CAM, ultrasonic sensing and audio feedback to detect obstacles and provide real-time alerts to the user.
+
+---
 
 ## 📌 Project Overview
 
-DRUSHTI is a low-cost wearable obstacle detection system designed to assist visually impaired people in detecting obstacles around them.
+DRUSHTI is designed in the form of smart glasses to provide a hands-free obstacle detection solution for visually impaired people.
 
-The system uses an ESP32-CAM and an ultrasonic sensor to detect obstacles and measure their distance. When an obstacle is detected within a certain range, the system provides an audio alert to the user.
-
-The main goal of DRUSHTI is to provide a simple, affordable, hands-free solution for safer mobility of visually impaired people.
+The device is mounted on a spectacle frame and contains sensing, processing and power components. An ultrasonic sensor measures the distance of nearby obstacles, while the ESP32-CAM is used as part of the sensing and processing system. When an obstacle is detected within the defined range, an audio alert is provided to the user.
 
 ---
 
-## 🎯 Objective
+## 🎯 Problem Statement
 
-The objective of DRUSHTI is to develop an affordable and wearable assistive device that helps visually impaired people detect obstacles and receive real-time audio alerts while moving.
+Traditional white canes and other mobility aids can have limitations when detecting obstacles in certain situations.
+
+There is a need for an affordable, wearable and hands-free assistive device that can help visually impaired people identify obstacles and receive timely alerts.
 
 ---
 
-## 🚨 Problem Statement
+## 💡 Objective
 
-Visually impaired people often face difficulties while navigating their surroundings because they cannot easily identify obstacles in their path.
+The main objectives of DRUSHTI are:
 
-Traditional mobility aids such as white canes may not provide sufficient information about obstacles at different distances or heights.
-
-DRUSHTI aims to address this challenge by detecting obstacles and providing real-time audio alerts to help the user navigate more safely.
+- To design an affordable wearable obstacle detection device.
+- To help visually impaired people detect nearby obstacles.
+- To provide real-time audio alerts.
+- To develop a compact and hands-free solution.
+- To improve mobility and obstacle awareness.
 
 ---
 
 ## ⚙️ System Overview
 
-DRUSHTI consists of an ESP32-CAM, ultrasonic sensor, battery, buck converter and audio feedback system integrated into a wearable glasses-based design.
-
-The ESP32-CAM is used as the main processing and detection unit, while the ultrasonic sensor measures the distance of obstacles in front of the user.
-
-When an obstacle is detected within the defined range, the system triggers an audio alert through the audio output, allowing the user to respond accordingly.
-
-### 🔧 Hardware Components
+The main hardware components used in the DRUSHTI prototype are:
 
 - ESP32-CAM
 - Ultrasonic Sensor
 - Li-ion Battery
 - Buck Converter
 - Audio Earpiece
-- Wearable Glasses Frame
+- Spectacle Frame
+
+---
+
+## 🔧 Hardware Components
+
+| Component | Purpose |
+|-----------|---------|
+| ESP32-CAM | Camera-based sensing and system processing |
+| Ultrasonic Sensor | Measures the distance of nearby obstacles |
+| Li-ion Battery | Provides portable power |
+| Buck Converter | Regulates the required voltage |
+| Audio Earpiece | Provides audio feedback to the user |
+| Spectacle Frame | Provides the wearable structure |
+
+---
 
 ## 🔄 Working Principle
 
-The DRUSHTI system works in the following sequence:
+The system works through the following steps:
 
-1. **Obstacle Detection**  
-   The ESP32-CAM detects objects in the user's surroundings.
+1. The device is powered using a rechargeable Li-ion battery.
+2. The ESP32-CAM and ultrasonic sensor become active.
+3. The ultrasonic sensor measures the distance between the user and nearby obstacles.
+4. The system checks the detected distance against the defined threshold.
+5. When an obstacle is detected within the required range, an audio alert is triggered.
+6. The user receives the alert through the audio earpiece.
+7. This helps the user become aware of obstacles while moving.
 
-2. **Distance Measurement**  
-   The ultrasonic sensor measures the distance between the user and the detected obstacle.
-
-3. **Distance Processing**  
-   The system evaluates the measured distance to determine whether the obstacle is within the alert range.
-
-4. **Audio Alert**  
-   When an obstacle is detected within the defined range, an audio alert is triggered.
-
-5. **User Response**  
-   The user receives the audio feedback and can take appropriate action to avoid the obstacle.
-
-### 📊 System Flow
+### Working Flow
 
 ```text
-ESP32-CAM
-    ↓
-Obstacle Detection
-    ↓
-Ultrasonic Sensor
-    ↓
-Distance Measurement
-    ↓
-Distance Processing
-    ↓
-Audio Alert
-    ↓
-User Response
-
-
-## ✨ Key Features
-
-- 👓 Wearable glasses-based design
-- 💰 Low-cost and affordable solution
-- 🔊 Real-time audio alerts
-- 📏 Ultrasonic-based distance measurement
-- 🤖 ESP32-CAM based obstacle detection
-- 🙌 Hands-free operation
-- 🚶 Designed to support safer mobility
-- 🌍 Suitable for indoor and outdoor environments
-
----
-
-## ✅ Advantages
-
-- Improves awareness of obstacles while walking
-- Provides immediate audio feedback
-- Compact and wearable design
-- Affordable compared to many advanced assistive systems
-- Easy-to-use concept for visually impaired users
-- Reduces dependence on manually checking obstacles
-
-
----
-
-## 🚀 Future Scope
-
-The DRUSHTI project can be further improved by adding advanced features such as:
-
-- 🎯 Real-time object recognition
-- 🦴 Bone conduction headphones for better audio feedback
-- 🚨 Obstacle priority system based on distance and object type
-- 📍 GPS-based navigation assistance
-- 🗣️ Voice-based navigation instructions
-- 🤖 Advanced AI/ML models for improved object detection
-- 📱 Smartphone connectivity for additional assistance
-
----
-
-## 🏁 Conclusion
-
-DRUSHTI is a wearable assistive technology concept designed to help visually impaired people detect obstacles through real-time audio feedback.
-
-By combining ESP32-CAM, ultrasonic sensing and audio feedback, the project aims to provide an affordable and practical solution for safer mobility.
-
-With further development in AI, object recognition and navigation technologies, DRUSHTI can be extended into a more advanced assistive system.
-
----
-
-## 👥 Team
-
-**Project:** DRUSHTI - Obstacle Detection Glasses for the Blind
-
-**Domain:** Artificial Intelligence / Embedded Systems / Assistive Technology
-
+        ┌─────────────────┐
+        │   ESP32-CAM     │
+        │ Sensing System  │
+        └────────┬────────┘
+                 ↓
+        ┌─────────────────┐
+        │   Ultrasonic    │
+        │     Sensor      │
+        └────────┬────────┘
+                 ↓
+        ┌─────────────────┐
+        │ Distance        │
+        │ Measurement     │
+        └────────┬────────┘
+                 ↓
+        ┌─────────────────┐
+        │ Obstacle        │
+        │ Detected?       │
+        └────────┬────────┘
+                 ↓
+        ┌─────────────────┐
+        │   Audio Alert   │
+        └────────┬────────┘
+                 ↓
+        ┌─────────────────┐
+        │     User        │
+        └─────────────────┘
