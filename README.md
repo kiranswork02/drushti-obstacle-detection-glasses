@@ -108,3 +108,18 @@ The system works through the following process:
         ┌─────────────────┐
         │      User       │
         └─────────────────┘
+
+
+        ## 📸 Project Gallery
+
+### Project View
+![DRUSHTI Project](drushti_project.jpg)
+
+### Front View
+![DRUSHTI Front View](drushtifront.jpg)
+
+### Prototype
+![DRUSHTI Prototype](drustiproject.jpg)
+
+### Side View
+![DRUSHTI Side View](drushtside.jpg)
