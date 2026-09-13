@@ -102,4 +102,36 @@ User Response
 - Easy-to-use concept for visually impaired users
 - Reduces dependence on manually checking obstacles
 
+
 ---
+
+## 🚀 Future Scope
+
+The DRUSHTI project can be further improved by adding advanced features such as:
+
+- 🎯 Real-time object recognition
+- 🦴 Bone conduction headphones for better audio feedback
+- 🚨 Obstacle priority system based on distance and object type
+- 📍 GPS-based navigation assistance
+- 🗣️ Voice-based navigation instructions
+- 🤖 Advanced AI/ML models for improved object detection
+- 📱 Smartphone connectivity for additional assistance
+
+---
+
+## 🏁 Conclusion
+
+DRUSHTI is a wearable assistive technology concept designed to help visually impaired people detect obstacles through real-time audio feedback.
+
+By combining ESP32-CAM, ultrasonic sensing and audio feedback, the project aims to provide an affordable and practical solution for safer mobility.
+
+With further development in AI, object recognition and navigation technologies, DRUSHTI can be extended into a more advanced assistive system.
+
+---
+
+## 👥 Team
+
+**Project:** DRUSHTI - Obstacle Detection Glasses for the Blind
+
+**Domain:** Artificial Intelligence / Embedded Systems / Assistive Technology
+
