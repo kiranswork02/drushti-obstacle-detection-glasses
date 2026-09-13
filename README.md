@@ -2,9 +2,9 @@
 
 ## Obstacle Detection Glasses for the Blind
 
-DRUSHTI is a low-cost wearable assistive device designed to help visually impaired people detect obstacles and improve their mobility.
+DRUSHTI is a wearable assistive technology project designed to help visually impaired people detect obstacles and improve their mobility.
 
-The system combines an ESP32-CAM, ultrasonic sensing and audio feedback to detect obstacles and provide real-time alerts to the user.
+The project uses an ESP32-CAM and ultrasonic sensing to detect obstacles and provide audio alerts to the user.
 
 ---
 
@@ -12,33 +12,37 @@ The system combines an ESP32-CAM, ultrasonic sensing and audio feedback to detec
 
 DRUSHTI is designed in the form of smart glasses to provide a hands-free obstacle detection solution for visually impaired people.
 
-The device is mounted on a spectacle frame and contains sensing, processing and power components. An ultrasonic sensor measures the distance of nearby obstacles, while the ESP32-CAM is used as part of the sensing and processing system. When an obstacle is detected within the defined range, an audio alert is provided to the user.
+The device is mounted on a spectacle frame and integrates sensing, processing, audio feedback and portable power components.
+
+The ultrasonic sensor measures the distance of nearby obstacles. The ESP32-CAM acts as the main processing and sensing unit. When an obstacle is detected within the defined range, the system provides an audio alert to the user.
 
 ---
 
 ## 🎯 Problem Statement
 
-Traditional white canes and other mobility aids can have limitations when detecting obstacles in certain situations.
+Visually impaired people can face difficulties while detecting obstacles during walking and navigation.
 
-There is a need for an affordable, wearable and hands-free assistive device that can help visually impaired people identify obstacles and receive timely alerts.
+Traditional mobility aids may not provide sufficient awareness of every obstacle, especially in different environments.
+
+DRUSHTI aims to provide an affordable and wearable solution that can detect nearby obstacles and alert the user through audio feedback.
 
 ---
 
-## 💡 Objective
+## 💡 Objectives
 
 The main objectives of DRUSHTI are:
 
-- To design an affordable wearable obstacle detection device.
+- To develop a wearable obstacle detection system.
 - To help visually impaired people detect nearby obstacles.
 - To provide real-time audio alerts.
-- To develop a compact and hands-free solution.
-- To improve mobility and obstacle awareness.
+- To create a compact and hands-free assistive device.
+- To develop an affordable solution for safer mobility.
 
 ---
 
 ## ⚙️ System Overview
 
-The main hardware components used in the DRUSHTI prototype are:
+The main components used in the DRUSHTI prototype are:
 
 - ESP32-CAM
 - Ultrasonic Sensor
@@ -52,27 +56,27 @@ The main hardware components used in the DRUSHTI prototype are:
 ## 🔧 Hardware Components
 
 | Component | Purpose |
-|-----------|---------|
-| ESP32-CAM | Camera-based sensing and system processing |
-| Ultrasonic Sensor | Measures the distance of nearby obstacles |
+|---|---|
+| ESP32-CAM | Main controller and camera-based sensing |
+| Ultrasonic Sensor | Measures distance to nearby obstacles |
 | Li-ion Battery | Provides portable power |
 | Buck Converter | Regulates the required voltage |
-| Audio Earpiece | Provides audio feedback to the user |
+| Audio Earpiece | Provides audio feedback |
 | Spectacle Frame | Provides the wearable structure |
 
 ---
 
 ## 🔄 Working Principle
 
-The system works through the following steps:
+The system works through the following process:
 
 1. The device is powered using a rechargeable Li-ion battery.
-2. The ESP32-CAM and ultrasonic sensor become active.
-3. The ultrasonic sensor measures the distance between the user and nearby obstacles.
-4. The system checks the detected distance against the defined threshold.
-5. When an obstacle is detected within the required range, an audio alert is triggered.
-6. The user receives the alert through the audio earpiece.
-7. This helps the user become aware of obstacles while moving.
+2. The ESP32-CAM and ultrasonic sensor are activated.
+3. The ultrasonic sensor measures the distance of nearby obstacles.
+4. The measured distance is checked against a predefined detection range.
+5. If an obstacle is detected within the required range, the system generates an alert.
+6. The alert is provided to the user through the audio earpiece.
+7. The user can respond to the obstacle while moving.
 
 ### Working Flow
 
@@ -88,13 +92,13 @@ The system works through the following steps:
         └────────┬────────┘
                  ↓
         ┌─────────────────┐
-        │ Distance        │
-        │ Measurement     │
+        │    Distance     │
+        │   Measurement   │
         └────────┬────────┘
                  ↓
         ┌─────────────────┐
-        │ Obstacle        │
-        │ Detected?       │
+        │    Obstacle     │
+        │    Detected?    │
         └────────┬────────┘
                  ↓
         ┌─────────────────┐
@@ -102,5 +106,5 @@ The system works through the following steps:
         └────────┬────────┘
                  ↓
         ┌─────────────────┐
-        │     User        │
+        │      User       │
         └─────────────────┘
