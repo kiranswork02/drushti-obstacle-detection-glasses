@@ -78,3 +78,28 @@ Distance Processing
 Audio Alert
     ↓
 User Response
+
+
+## ✨ Key Features
+
+- 👓 Wearable glasses-based design
+- 💰 Low-cost and affordable solution
+- 🔊 Real-time audio alerts
+- 📏 Ultrasonic-based distance measurement
+- 🤖 ESP32-CAM based obstacle detection
+- 🙌 Hands-free operation
+- 🚶 Designed to support safer mobility
+- 🌍 Suitable for indoor and outdoor environments
+
+---
+
+## ✅ Advantages
+
+- Improves awareness of obstacles while walking
+- Provides immediate audio feedback
+- Compact and wearable design
+- Affordable compared to many advanced assistive systems
+- Easy-to-use concept for visually impaired users
+- Reduces dependence on manually checking obstacles
+
+---
